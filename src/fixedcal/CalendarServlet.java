@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.threeten.extra.chrono.*;
-
-import java.time.*;
 import java.time.temporal.ChronoField;
 
 
@@ -34,8 +32,12 @@ public class CalendarServlet extends HttpServlet {
 		int date = (int) ifd.getLong(ChronoField.DAY_OF_MONTH);
 		int day = (int) ifd.getLong(ChronoField.DAY_OF_WEEK);
 		if (month==6 && date==29) {
+			request.setAttribute("month", months[month-1]);
+			request.setAttribute("date", date);
 			request.setAttribute("day", "Leap Day");
 		} else if (month==13 && date==29) {
+			request.setAttribute("month", months[month-1]);
+			request.setAttribute("date", date);
 			request.setAttribute("day", "Year Day");
 		} else {
 			request.setAttribute("month", months[month-1]);
