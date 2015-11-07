@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,700,900);
+body {}
+
+#container {
+	padding: 15px;
+	font-family: Lato, Helvetica;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#date {
+	font-size: 40vmin;
+	text-align: center;
+	font-weight: 100;
+}
+
+#month {
+	background-color: crimson;
+	font-size: 15vmin;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-weight: 900;
+}
+
+#day {
+	text-align: center;
+	font-size: 12vmin;
+	padding: 5px;
+	font-weight: 700;
+}
+
+#calendarSheet {
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	width: 90vmin;
+	max-width: 700px;
+	height: 90vmin;
+	max-height: 700px;
+	min-width: 200px;
+	min-height: 200px;
+	box-shadow: 7px 7px 5px lightgrey;
+}
